@@ -1,8 +1,8 @@
-var mongoose = require('mongoose');
-var model = mongoose.model('trips');
+const mongoose = require('mongoose');
+const model = mongoose.model('trips');
 
 //GET: /trips - lists all trips
-var tripsList = async (req, res) => {
+const tripsList = async (req, res) => {
     model
         .find({}) //empty filter for all
         .exec((err, trips) => {
