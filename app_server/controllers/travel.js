@@ -30,7 +30,7 @@ const travelList = (req, res) => {
     const requestOptions = {
         url: `${apiOptions.server}${path}`,
         method: 'GET',
-            JSON: {},
+            json: {},
     };
 
     console.info('>> travelController.travelList calling ' + requestOptions.url);
